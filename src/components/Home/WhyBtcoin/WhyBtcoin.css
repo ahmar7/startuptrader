@@ -1,0 +1,168 @@
+.whyus .gap-8 {
+  gap: 2rem;
+}
+.whyus .grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.whyus .grid {
+  display: grid;
+}
+.whyus {
+  padding-top: 50px !important;
+}
+/*  */
+
+.border-pgray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(34, 34, 34);
+}
+.whyus .border {
+  border-width: 1px;
+}
+.whyus .rounded-xl {
+  border-radius: 0.75rem;
+}
+.whyus .overflow-hidden {
+  overflow: hidden;
+}
+.whyus .h-\[400px\] {
+  height: 400px;
+}
+.whyus .shiny_effect {
+  --px: 0;
+  --py: 0;
+  border-radius: inherit;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.whyus .z-\[25\] {
+  z-index: 25;
+}
+.whyus .shiny_effect:after {
+  --bgColor: hsla(0, 0%, 100%, 0.5);
+  background: radial-gradient(var(--bgColor) 0, transparent 100%);
+  content: "";
+  height: 200%;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(calc(var(--px) * 1px)) translateX(-50%)
+    translateY(calc(var(--py) * 1px)) translateY(-50%);
+  transform: translateX(calc(var(--px) * 1px)) translateX(-50%)
+    translateY(calc(var(--py) * 1px)) translateY(-50%);
+  transition: opacity 0.3s linear;
+  width: 200%;
+  z-index: 9999;
+}
+.whyus .p-10 {
+  padding: 2.5rem;
+}
+.whyus .w-full {
+  width: 100%;
+}
+.whyus .z-\[12\] {
+  z-index: 12;
+}
+.whyus .bottom-0 {
+  bottom: 0;
+}
+.whyus :is(.dark .dark\:text-pwhite) {
+  --tw-text-opacity: 1;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.7);
+}
+.whyus .text-pgray-800 {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, 0.7);
+}
+.whyus .font-medium {
+  font-weight: 500;
+}
+.whyus .text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.whyus .mb-2 {
+  margin-bottom: 0.5rem;
+}
+.whyus :is(.dark .dark\:text-pwhite\/70) {
+  color: rgba(255, 255, 255, 0.7);
+}
+.whyus .text-pgray-600\/70 {
+  color: rgba(255, 255, 255, 0.7);
+}
+.whyus .font-medium {
+  font-weight: 500;
+}
+.whyus .text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.whyus .bg-no-repeat {
+  background-repeat: no-repeat;
+}
+.whyus .bg-top {
+  background-position: top;
+}
+.whyus .bg-contain {
+  background-size: contain;
+}
+.whyus .h-full {
+  height: 100%;
+}
+.section-padding {
+  padding-block: 70px 20px;
+}
+.whyus .mb34 {
+  margin-bottom: 48px;
+}
+.whyus .shiny_effect:after {
+  --bgColor: hsla(0, 0%, 100%, 0.5);
+  background: radial-gradient(var(--bgColor) 0, transparent 100%);
+  content: "";
+  height: 200%;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(calc(var(--px) * 1px)) translateX(-50%)
+    translateY(calc(var(--py) * 1px)) translateY(-50%);
+  transform: translateX(calc(var(--px) * 1px)) translateX(-50%)
+    translateY(calc(var(--py) * 1px)) translateY(-50%);
+  transition: opacity 0.3s linear;
+  width: 200%;
+  z-index: 9999;
+}
+/*  */
+@media (min-width: 640px) {
+  .whyus .sm\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  .whyus .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 768px) {
+  .section-padding {
+    padding-block: 100px 20px;
+  }
+  .whyus .md\:bg-center {
+    background-position: 50%;
+  }
+  .whyus .md\:bg-cover {
+    background-size: cover;
+  }
+  .whyus .md\:h-\[500px\] {
+    height: 500px;
+  }
+  .whyus .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

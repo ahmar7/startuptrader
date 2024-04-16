@@ -1,0 +1,296 @@
+.technology {
+  height: 576px;
+  border-radius: 50px;
+  background-color: #0b0216;
+  background-image: url(../../../assets/img/technologyEchlip.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+.bl-transition-colors {
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+.bots {
+  bottom: 0 !important;
+}
+.t-version {
+  background-color: transparent !important;
+  transition: all 0.4s ease-in-out;
+  margin-left: 10px;
+  border: 2px solid transparent;
+}
+
+.t-version:hover,
+.t-version.active,
+.t-version:hover {
+  transition: all 0.4s ease-in-out;
+  border-color: #fc6432;
+}
+
+.t-version.active,
+.t-version:hover {
+  transition: all 0.4s ease-in-out;
+
+  box-shadow: 0 0px 32px 0 rgba(252, 100, 50, 0.5);
+}
+
+.corner-box:hover::before {
+  width: 0 !important;
+}
+
+.t-version::after {
+  transition: all 0.3s ease;
+  content: "";
+  position: absolute;
+  /* background: #151515; */
+  background: #121314;
+  z-index: -1;
+}
+.t-version::after {
+  transition: all 0.3s ease;
+  content: "";
+  position: absolute;
+  /* background: #151515; */
+  z-index: -1;
+}
+.t-version::before {
+  width: calc(102% - 3rem);
+  height: calc(100% + 4px);
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.t-version::after {
+  height: 0 !important;
+}
+
+.t-version:after {
+  transition: all 0.3s ease;
+  content: "";
+  position: absolute;
+  /* background: #151515; */
+  background: #121314;
+  z-index: -1;
+}
+.t-version::after {
+  height: calc(110% - 3rem);
+  width: calc(100% + 4px);
+  left: -2px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.t-version::after {
+  transition: all 0.3s ease;
+  content: "";
+  position: absolute;
+  /* background: #151515; */
+  z-index: -1;
+}
+@media (max-width: 480px) {
+  .t-version {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}
+.bl-border-primary {
+  border-color: #fc6432;
+}
+.bl-border-primary {
+  border-color: #fc6432;
+}
+
+.bl-border-r {
+  border-right-width: 1px;
+}
+.bl-border-b {
+  border-bottom-width: 1px;
+}
+.bl-w-2\.5 {
+  width: 0.625rem;
+}
+.bl-h-2\.5 {
+  height: 0.625rem;
+}
+.bl-right-0 {
+  right: 0;
+}
+.bl-border-t {
+  border-top-width: 1px;
+}
+.bl-border-l {
+  border-left-width: 1px;
+}
+.bl-w-2\.5 {
+  width: 0.625rem;
+}
+.bl-h-2\.5 {
+  height: 0.625rem;
+}
+.bl-top-0 {
+  top: 0;
+}
+.bl-left-0 {
+  left: 0;
+}
+.bl-absolute {
+  position: absolute;
+}
+.bl-text-primary {
+  color: white;
+}
+.bl-right-0 {
+  /* min */
+  bottom: 0;
+}
+/* .bl-h-2\.5 {
+  width: revert-layer !important;
+  margin: 0 !important;
+  display: block !important;
+} */
+.bl-text-\[26px\]\/none {
+  /* font-size: 26px; */
+  line-height: 1;
+}
+
+.bl-bg-primary\/20 {
+  background-color: rgba(252, 100, 50, 0.2);
+}
+.bl-justify-center {
+  justify-content: center;
+}
+.bl-items-center {
+  align-items: center;
+}
+.bl-h-\[55px\] {
+  height: 50px;
+}
+
+.bl-min-w-\[260px\] {
+  min-width: 192px;
+}
+.bl-inline-flex {
+  display: inline-flex;
+}
+.bl-relative {
+  position: relative;
+}
+.motpt {
+  font-family: "Matter SQ", sans-serif !important;
+}
+.technology.max-width {
+  max-width: 1250px !important;
+}
+.technologyTag {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: start;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fc6432;
+}
+.innerTechnolodyDiv {
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+.technologyMainHeading {
+  margin: 2rem 0;
+  width: 600px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 110%;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.technologySubHeading {
+  width: 500px;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+  opacity: 0.6;
+}
+.innerTechnolodyDiv .innergi {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-top: 2rem;
+  /* 
+  justify-content: space-between;
+  width: 300px;
+  */
+}
+.innerTechnolodyDiv div a {
+  text-decoration: none;
+}
+
+.technologyLearnMore {
+  width: 138px;
+  height: 48px;
+  border: 1px solid #7000ff;
+  border-radius: 90px;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  background: #7000ff;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.innerTechnolodyDiv div a {
+  text-decoration: none;
+}
+
+.technologyViewDocs {
+  width: 138px;
+  height: 48px;
+  border: 1px solid #7000ff;
+  border-radius: 90px;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+@media screen and (max-width: 767px) {
+  .technology {
+    height: 875px;
+    background-image: url(../../../assets/img/technologyMobileBack.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .technologySubHeading {
+    font-size: 14px;
+    width: auto;
+  }
+
+  .technologyMainHeading {
+    font-weight: 600;
+    font-size: 32px;
+    width: auto;
+    line-height: 110%;
+    margin: 20px 0;
+  }
+
+  .innerTechnolodyDiv {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+}

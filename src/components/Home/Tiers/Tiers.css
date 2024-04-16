@@ -1,0 +1,216 @@
+.launchpad-tiers-heading {
+  padding-bottom: 20px;
+}
+
+.section.svelte-16vqnfu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.header.svelte-bi7erv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+h2.weight-bold.svelte-17v69ua {
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  text-align: left;
+  justify-content: flex-start;
+}
+.sub-header.svelte-bi7erv {
+  text-align: center;
+}
+
+.header.svelte-bi7erv > * + * {
+  padding-bottom: 0.5rem;
+}
+.wrapper.svelte-1j0scf9 {
+  position: relative;
+  width: 100%;
+}
+.slider-wrapper.svelte-1j0scf9 {
+  display: grid;
+  grid-auto-flow: column;
+  padding-top: 0.75;
+  padding-bottom: 2px;
+  padding: 0 0.25rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  width: 100%;
+  position: relative;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+}
+
+.scrollY,
+.scrollX {
+  scrollbar-color: #000000 transparent !important;
+}
+.hide-scrollbar {
+  scrollbar-width: none;
+}
+.scrollX {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  transform: translateZ(0);
+
+  -moz-transform: none !important;
+  scrollbar-width: thin;
+}
+.hide-scrollbar {
+  scrollbar-width: none;
+}
+.wrapper-mobile.svelte-1j0scf9:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: calc(1rem * -1);
+  bottom: 0;
+  width: 1.75rem;
+  background-image: linear-gradient(to left, #1a2c38 0.5rem, transparent 100%);
+  z-index: 10;
+}
+.slider-wrapper.svelte-1j0scf9 > .card-wrapper {
+  scroll-snap-align: start;
+}
+
+.card-wrapper.svelte-baey6h {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+.card-header.svelte-baey6h {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.75rem;
+  width: 100%;
+}
+.card-header-icon.svelte-baey6h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  /* background-color: #151515; */
+  border-radius: 100%;
+}
+.card-header-icon.svelte-baey6h svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.svg-icon {
+  pointer-events: none;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  flex-shrink: 0;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+.card-header-line.svelte-baey6h {
+  height: 0.3rem;
+  border-radius: 0.5rem;
+  width: 105%;
+  margin-right: calc(0.5rem * -1);
+  flex: 1;
+  background-color: #121314;
+}
+.card.svelte-baey6h {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #121314;
+  flex: 1;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 20rem;
+  padding: 1.25rem;
+}
+
+.card-label.svelte-baey6h {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+}
+span.variant-contrast.svelte-17v69ua {
+  color: #071d2a;
+  font-weight: bold;
+}
+.card-amount.svelte-baey6h {
+  display: flex;
+  flex-direction: column;
+}
+
+span.variant-highlighted.svelte-17v69ua {
+  color: white;
+  text-align: left;
+  justify-content: flex-start;
+
+  font-size: 1.75rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+}
+span.variant-subtle.svelte-17v69ua {
+  color: #b1bad3;
+  text-align: left;
+  justify-content: flex-start;
+  display: inline-flex;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.card-bonus-list.svelte-baey6h {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.bonus-icon.svelte-baey6h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+}
+.bonus-icon.svelte-baey6h svg {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+span.variant-highlighted.svelte-17v69ua {
+  font-size: 0.875rem;
+  color: white;
+}
+
+.bonus.svelte-baey6h {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .section.svelte-16vqnfu {
+    gap: 0.5rem;
+  }
+
+  .slider-wrapper.svelte-1j0scf9 {
+    grid-auto-columns: calc(41.67%) !important;
+  }
+}
+@media (max-width: 510px) {
+  .slider-wrapper.svelte-1j0scf9 {
+    grid-auto-columns: calc(66.67%) !important;
+  }
+}
