@@ -17,3 +17,11 @@ ul {
   margin: 0;
   padding: 0;
 }
+.section-width {
+  max-width: 1300px;
+  margin: auto;
+  padding-inline: 20px;
+}
+.home-bg {
+  background: linear-gradient(180deg, #050510 0%, #0c142b 100%);
+}
