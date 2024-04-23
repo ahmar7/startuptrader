@@ -10,7 +10,7 @@ import DashboardLayout from '../../layout/DashboardLayout/DashboardLayout'
 const Dashboard = () => {
   return (
     <DashboardLayout>
-    <div className='p-5 overflow-hidden  w-full'>
+    <div className='p-10 overflow-hidden  w-full'>
         <DashboardProfileCard />
         <PortfolioValuesCard />
         

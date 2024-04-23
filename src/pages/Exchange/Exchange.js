@@ -7,7 +7,7 @@ import ExchangeChart from '../../components/ExchangeCard/ExchangeChart'
 const Exchange = () => {
   return (
     <DashboardLayout>
-        <div className='p-5'>
+        <div className='p-10'>
     <ExchangeStartUp />
     <ExchangeChart />
     </div>

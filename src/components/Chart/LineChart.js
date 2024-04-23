@@ -31,9 +31,11 @@ export const LineChart = () => {
       } else if (containerWidth > 900) {
         width = 550;
        
-      } else {
-        width = 400;
+      } else if(containerWidth >500){
+        width = 450;
     
+      }else{
+        width = 300;
       }
 
       setChartDimensions({ width, height });
