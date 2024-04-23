@@ -18,7 +18,7 @@ const DashboardProfileCard = () => {
         </div>
 
         <div className='border font-manrope mt-5 md:flex-row lg:w-[50%] gap-4 flex-col w-full flex p-5 text-[#CCCED5] border-[#333C57] rounded-lg '>
-            <div className='px-8 flex w-full border-b md:border-none border-[#333C57] pb-5 md:pb-0 justify-center items-center flex-col'>
+            <div className=' flex w-full border-b md:border-none border-[#333C57] pb-5 md:pb-0 justify-center items-center flex-col'>
             <p className='text-sm'>Net Worth</p>
             <p className='font-bold text-2xl'>$120.5</p>
             </div>
@@ -26,7 +26,7 @@ const DashboardProfileCard = () => {
             <p className='text-sm'>Total Investments</p>
             <p className='font-bold text-2xl'>$764,43</p>
             </div>
-            <div className='px-8 flex justify-center w-full items-center flex-col'>
+            <div className=' flex justify-center w-full items-center flex-col'>
             <p className='text-sm'>Avarage Share price</p>
             <p className='font-bold text-2xl'>$120.5</p>
             </div>

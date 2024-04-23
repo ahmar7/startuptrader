@@ -1,4 +1,5 @@
 import React from 'react'
+import Tooltip from '../Tooltip/Tooltip'
 
 const PortfolioDescriptionCard = () => {
   return (
@@ -10,7 +11,7 @@ const PortfolioDescriptionCard = () => {
         </p>
         <p className='text-sm py-5 font-manrope text-[#CCCED5]'>Team Members:</p>
         <div className='flex gap-4'>
-          {[...Array(4)].map((_, i) => <img key={i} src={`/images/pro${i}.png`} alt='' className='w-12 h-12 rounded-full' />)}
+          {[...Array(4)].map((_, i) => <div><Tooltip tip={"John Davidson"}><img key={i} src={`/images/pro${i}.png`} alt='' className='w-12 h-12 rounded-full' /></Tooltip></div>)}
         </div>
       </div>
       <div className='bg-[#1C2642] rounded-lg flex-grow md:w-[30%] mt-5 p-5'>

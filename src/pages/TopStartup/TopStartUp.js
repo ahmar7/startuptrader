@@ -11,13 +11,13 @@ import UnfoldMoreIcon from '../../components/Icons/UnfoldMoreIcon'
 const TopStartUp = () => {
   return (
     <DashboardLayout>
-      <div className='p-5 h-screen font-manrope'>
+      <div className='p-10 h-screen font-manrope'>
         <p className='text-white text-lg font-bold'>Browse Startups</p>
         <div className='flex justify-between mt-6 flex-wrap'>
-          <div className='flex items-center border border-[#4C546C] rounded-full w-full lg:w-96 p-1 my-2'>
+          <div className='flex items-center border border-[#4C546C] pl-3 rounded-full w-full lg:w-96 p-1 my-2'>
             <SearchIcon />
             <input type='text' placeholder='Search by company name or keywords'
-              className='bg-transparent placeholder:text-[#CCCED5] placeholder:pl-3 focus:outline-none w-full text-sm'
+              className='bg-transparent placeholder:text-[#CCCED5] h-9 placeholder:pl-3 pl-3 text-white focus:outline-none w-full text-sm'
             />
           </div>
           <div className='flex gap-2 items-center my-2'>
@@ -28,21 +28,21 @@ const TopStartUp = () => {
         </div>
         <div className='overflow-x-auto'>
           <table className="min-w-full mt-8">
-            <thead>
-              <tr>
+            <thead className='border-b border-[#4C546C] h-12'>
+              <tr className=''>
                 <th className="text-[#CCCED5] text-sm"> # </th>
                 <th className="text-[#CCCED5] text-sm text-left pl-3"> Name </th>
-                <th className="text-[#CCCED5] text-sm">
+                <th className="text-[#CCCED5]  text-sm">
                   <div className='flex items-center gap-2'>
                     Industry <UnfoldMoreIcon />
                   </div>
                 </th>
-                <th className="text-[#CCCED5] text-sm">
+                <th className="text-[#CCCED5]  text-sm">
                   <div className='flex items-center gap-2'>
                     Total Value <UnfoldMoreIcon />
                   </div>
                 </th>
-                <th className="text-[#CCCED5] text-sm">
+                <th className="text-[#CCCED5]  text-sm">
                   <div className='flex items-center gap-2'>
                     Stock price <UnfoldMoreIcon />
                   </div>
@@ -60,13 +60,13 @@ const TopStartUp = () => {
                 <tr key={i} className='border-b border-[#333C57]'>
                   <td className='text-white text-sm'>{i + 1}</td>
                   <td>
-                    <div className='flex items-center py-5 gap-2'>
+                    <div className='flex items-center w-40 py-5 gap-2'>
                       <img src={`/images/c${i}.png`} alt='' className='w-6 h-6 rounded-full' />
                       <p className='text-white text-sm'>Company name</p>
                     </div>
                   </td>
                   <td className='text-white text-sm'>Industry type</td>
-                  <td className='text-white text-sm'>$23,447.64</td>
+                  <td className='text-white text-sm w-40'>$23,447.64</td>
                   <td className='text-white text-sm'>$23,447.64</td>
                   <td><AreaChart height={28} width={100} color1={'#0F9663'} color2={'#0F9663'} /></td>
                   <td>

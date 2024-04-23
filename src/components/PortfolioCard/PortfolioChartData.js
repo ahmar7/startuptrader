@@ -7,7 +7,7 @@ const PortfolioChartData = () => {
     const [searchDay, setSearchDay] = useState("24H");
 
     return (
-        <div className='flex flex-col lg:flex-row gap-4 p-5'>
+        <div className='flex flex-col lg:flex-row gap-4 '>
             <div className='bg-[#1C2642] flex-grow rounded-lg mt-5 p-5'>
                 <div className='flex justify-between items-center'>
                     <p className='font-bold text-xl lg:text-2xl text-white'>$12.5</p>

@@ -26,9 +26,11 @@ export const PortfolioChart = () => {
       } else if (containerWidth > 900) {
         width = 550;
        
-      } else {
+      } else if(containerWidth >500){
         width = 400;
     
+      }else{
+        width = 300;
       }
 
       setChartDimensions({ width, height });

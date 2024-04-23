@@ -54,8 +54,8 @@ const AssetsCard = () => {
                     <tbody className='border-t border-[#333C57]'>
                         {[...Array(6)].map((_, i) => (
                             <tr key={i} className='border-b border-b-[#333C57]'>
-                                <td className="py-3 px-4">
-                                    <div className='flex gap-2 items-center'>
+                                <td className="py-3  px-4">
+                                    <div className='flex gap-2 w-40 items-center'>
                                         <img src={`/images/c${i}.png`} alt='' className=' w-6 h-6 md:w-10 md:h-10 rounded-full' />
                                         <div>
                                             <p className='font-bold text-sm text-white'>Company name</p>

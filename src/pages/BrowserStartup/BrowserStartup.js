@@ -8,15 +8,15 @@ import UpValueIcon from '../../components/Icons/UpValueIcon';
 const BrowserStartup = () => {
   return (
     <DashboardLayout>
-      <div className='p-5 h-screen  font-manrope overflow-y-auto'>
+      <div className='p-10 h-screen  font-manrope overflow-y-auto'>
         <p className='text-white text-lg font-bold'>Browse Startups</p>
         <div className='flex flex-wrap justify-between items-center mt-6'>
-          <div className='flex items-center border border-[#4C546C] rounded-full w-full md:w-96 p-1 my-2'>
+          <div className='flex items-center border border-[#4C546C] pl-3 rounded-full w-full md:w-96 p-1 my-2'>
             <SearchIcon />
             <input 
               type='text' 
               placeholder='Search by company name or keywords'  
-              className='bg-transparent placeholder:text-[#CCCED5] focus:outline-none w-full text-sm p-2'
+              className='bg-transparent placeholder:text-[#CCCED5] pl-3 placeholder:pl-3 text-white focus:outline-none w-full text-sm p-2'
             />
           </div>
           <div className='flex gap-2 items-center my-2'>
