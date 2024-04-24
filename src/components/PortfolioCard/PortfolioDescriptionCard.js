@@ -4,7 +4,7 @@ import Tooltip from '../Tooltip/Tooltip'
 const PortfolioDescriptionCard = () => {
   return (
     <div className='flex flex-col md:flex-row gap-4 '>
-      <div className='bg-[#1C2642] flex-grow md:w-[70%] rounded-lg mt-5 p-5'>
+      <div className='bg-[#1C2642] flex-grow md:w-[70%] rounded-2xl  mt-5 p-5'>
         <p className='text-lg font-manrope font-bold text-white'>Description</p>
         <p className='text-sm py-5 font-manrope text-[#CCCED5]'>
           Company, based in Austin, Texas, is a leading force in electric vehicles and renewable energy. The company's Automotive segment specializes in electric cars, services, and charging infrastructure. In the Energy Generation and Storage sector, Tesla offers solar products, energy storage solutions, and related services for homes, businesses, and utilities. Established as Tesla Motors in 2003, the company now leads the way in sustainable transportation and renewable energy advancements.
@@ -14,7 +14,7 @@ const PortfolioDescriptionCard = () => {
           {[...Array(4)].map((_, i) => <div><Tooltip tip={"John Davidson"}><img key={i} src={`/images/pro${i}.png`} alt='' className='w-12 h-12 rounded-full' /></Tooltip></div>)}
         </div>
       </div>
-      <div className='bg-[#1C2642] rounded-lg flex-grow md:w-[30%] mt-5 p-5'>
+      <div className='bg-[#1C2642] rounded-2xl  flex-grow md:w-[30%] mt-5 p-5'>
         <div className='flex justify-center items-center'>
           {["Buy/Sell", "Short"].map((v, i) => (
             <p key={i} className={`w-full flex text-[#FFFFFF]  justify-center items-center border-b pb-3 ${v === "Buy/Sell" ? "border-[#439CFF]" : ""}`}>

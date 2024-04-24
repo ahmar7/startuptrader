@@ -8,10 +8,10 @@ const PortfolioChartData = () => {
 
     return (
         <div className='flex flex-col lg:flex-row gap-4 '>
-            <div className='bg-[#1C2642] flex-grow rounded-lg mt-5 p-5'>
-                <div className='flex justify-between items-center'>
+            <div className='bg-[#1C2642] flex-grow rounded-2xl  mt-5 p-5'>
+                <div className='flex md:justify-between md:gap-0 gap-4 md:flex-row flex-col  md:tems-center'>
                     <p className='font-bold text-xl lg:text-2xl text-white'>$12.5</p>
-                    <div className='flex items-center gap-2'>
+                    <div className='flex items-center md:mb-0 mb-5 md:gap-2'>
                         {["24H", "5D", "1M", "YTP", "1Y", "2Y", "5Y", "ALL"].map((v) => (
                             <p key={v} onClick={() => setSearchDay(v)}
                                className={`text-xs lg:text-sm px-2 py-1 cursor-pointer ${searchDay === v ? "text-[#439CFF] border border-[#439CFF] rounded-full text-center" : "text-[#CCCED5]"}`}>
@@ -26,7 +26,7 @@ const PortfolioChartData = () => {
                 </div>
                 <PortfolioChart />
             </div>
-            <div className='bg-[#1C2642] rounded-lg flex-grow lg:flex-grow-0 lg:w-1/3 mt-5 p-5'>
+            <div className='bg-[#1C2642] rounded-2xl  flex-grow lg:flex-grow-0 lg:w-1/3 mt-5 p-5'>
                 <p className='text-white font-bold text-lg pb-5'>User Submitted News</p>
                 <div className='flex flex-col gap-5 overflow-y-auto' style={{ maxHeight: '400px' }}>
                     {[...Array(5)].map((_, i) => (

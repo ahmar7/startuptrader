@@ -6,7 +6,7 @@ import { AreachartLoss } from '../Chart/AreachartLoss'
 const PortfolioValuesCard = () => {
   return (
   <div className='flex flex-col lg:flex-row gap-2 font-manrope'>
-  <div className='bg-[#1C2642] flex flex-col rounded-lg mt-5 p-5 w-full '>
+  <div className='bg-[#1C2642] flex flex-col rounded-2xl  mt-5 p-5 w-full '>
     <p className='text-lg font-bold text-white'>Portfolio Value</p>
     <h1 className='font-bold text-3xl text-white mt-6'>$214.65</h1>
     <div className='flex items-center text-center mt-3'>
@@ -16,7 +16,7 @@ const PortfolioValuesCard = () => {
     </div>
   </div>
 
-  <div className='bg-[#1C2642] flex flex-col rounded-lg mt-5 p-5 w-full '>
+  <div className='bg-[#1C2642] flex flex-col rounded-2xl  mt-5 p-5 w-full '>
     <p className='text-lg font-bold text-white'>Total Income</p>
     <div className='flex justify-between items-center w-full'>
       <div>
@@ -31,7 +31,7 @@ const PortfolioValuesCard = () => {
     </div>
   </div>
 
-  <div className='bg-[#1C2642] flex flex-col rounded-lg mt-5 p-5 w-full '>
+  <div className='bg-[#1C2642] flex flex-col rounded-2xl  mt-5 p-5 w-full '>
     <p className='text-lg font-bold text-white'>Total Income</p>
     <div className='flex justify-between items-center w-full'>
       <div>

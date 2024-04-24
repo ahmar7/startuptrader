@@ -17,7 +17,7 @@ const data = [
 
 const IndustryFoucsCard = () => {
   return (
-    <div className='bg-[#1C2642] flex-col flex mt-5 rounded-lg w-full '>
+    <div className='bg-[#1C2642] flex-col flex mt-5 rounded-2xl  w-full '>
         <p className='text-[#FFFFFF] font-manrope font-bold px-5 pt-5 text-lg'>Industry focus</p>
         <div className='flex justify-center mt-10 items-center'>
         <DonutChart data={data} colors={colors} />

@@ -4,7 +4,7 @@ import StarIcon from '../Icons/StarIcon'
 const PortfoliostartupCard = () => {
   return (
   
-    <div className='bg-[#1C2642] lg:justify-between flex lg:flex-row flex-col rounded-lg w-full p-5 '>
+    <div className='bg-[#1C2642] lg:justify-between flex lg:flex-row flex-col rounded-2xl  w-full p-5 '>
         <div className='flex gap-4'>
         <div>
             <img src='/images/google.png'  alt='' className='' />
