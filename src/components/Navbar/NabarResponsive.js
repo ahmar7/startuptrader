@@ -102,7 +102,7 @@ export default function NabarResponsive() {
                 </div>
               </div>
 
-              <Disclosure.Panel className="md:hidden">
+              <Disclosure.Panel className="md:hidden absolute w-full bg-[#171f38] border-b-[1px] border-b-[#333C57] z-10">
                 <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
                   {sidebarConst.map((item,index) => (
                     <Disclosure.Button

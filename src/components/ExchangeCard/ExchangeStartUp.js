@@ -5,8 +5,8 @@ import UpValueIcon from '../Icons/UpValueIcon'
 const ExchangeStartUp = () => {
   return (
     <div className='flex md:flex-row flex-col gap-4 '>
-    <div className='bg-[#1C2642] md:w-[70%]   rounded-lg p-5 mt-5 '>
-       <div className='flex justify-between'>
+    <div className='bg-[#1C2642] md:w-[70%]   rounded-2xl  p-5 mt-5 '>
+       <div className='flex  md:gap-0 md:flex-row flex-col gap-4 md:justify-between'>
     <div className='flex gap-4'>
         <div>
             <img src='/images/google.png'  alt='' className='' />
@@ -39,7 +39,7 @@ const ExchangeStartUp = () => {
       
     </div>
     </div>
-    <div className='bg-[#1C2642]  rounded-lg md:w-[30%] p-5 mt-5 '>
+    <div className='bg-[#1C2642]  rounded-2xl  md:w-[30%] p-5 mt-5 '>
         <p className='text-[18px] text-[#FFFFFF] font-manrope font-bold'>Order Books</p>
         <div className='flex justify-between border-b py-3'>
             {["Shares","Price","Symbol","Status"].map((v)=>  <p className='text-[#CCCED5] text-[12px] font-manrope'>{v}</p>)}

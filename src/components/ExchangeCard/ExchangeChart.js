@@ -14,12 +14,12 @@ const ExchangeChart = () => {
   return (
     <div className='flex md:flex-row flex-col gap-4 '>
     <div className=' md:w-[70%]    '>
-    <div className='bg-[#1C2642]    rounded-lg p-5 mt-5 '>
-    <div className='flex justify-between'>
+    <div className='bg-[#1C2642]    rounded-2xl  p-5 mt-5 '>
+    <div className='flex md:flex-row md:gap-0 gap-4 flex-col md:items-center md:justify-between'>
       
             <p className='font-bold text-[32px]  text-[#FFFFFF]'>$12.5</p>
            
-            <div className='flex h-5 justify-center items-center gap-2'>
+            <div className='flex h-5 justify-center items-center mb-5 md:mb-0 md:gap-2'>
             {["24H","5D","1M","YTP","1Y","2Y","5Y","ALL"].map((v)=><p onClick={()=>setSearchDay(v)} className={` text-sm  px-2 py-1 cursor-pointer ${searchDay==v?"text-[#439CFF] border border-[#439CFF] rounded-full  text-center  ":"text-[#CCCED5]"}`}>{v}</p>)}
             </div>
         </div>
@@ -35,7 +35,7 @@ const ExchangeChart = () => {
       </div>
       <PortfolioChart />
     </div>
-        <div className='bg-[#1C2642]    rounded-lg p-5 mt-5 '>
+        <div className='bg-[#1C2642]    rounded-2xl  p-5 mt-5 '>
         <p className='text-[18] font-manrope font-bold text-[#FFFFFF]'>Live feed</p>
 <div className='flex justify-between items-center'>
         <div className='flex gap-3 pt-5'>
@@ -92,7 +92,7 @@ const ExchangeChart = () => {
        
     </div>
     <div className=' md:w-[30%] flex flex-col h-full '>
-    <div className='bg-[#1C2642]   rounded-lg  p-5 mt-5 '>
+    <div className='bg-[#1C2642]   rounded-2xl   p-5 mt-5 '>
         <div className='flex justify-center items-center'>
         {["Buy/Sell","Short"].map((v,i)=> <p className={`w-[50%] flex font-manrope text-[#FFFFFF] font-semibold text-[12px] justify-center items-center border-b pb-3 ${"Buy/Sell"==v?"border-[#439CFF]":""}`}>{v}</p>)}
        
@@ -115,7 +115,7 @@ Buy
 </button>
     </div>
     </div>
-    <div className='bg-[#1C2642]   rounded-lg  p-5 mt-5 '>
+    <div className='bg-[#1C2642]   rounded-2xl   p-5 mt-5 '>
         <div className='flex justify-between items-center'>
     <p className='text-[18] font-manrope font-bold text-[#FFFFFF] pb-5'>Live feed</p>
     <div className='flex gap-1 items-center'>

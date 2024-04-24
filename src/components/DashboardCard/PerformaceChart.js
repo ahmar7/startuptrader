@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 const PerformanceChart = () => {
     
   return (
-    <div className='bg-[#1C2642] flex flex-col lg:flex-row mt-5 font-manrope p-5 rounded-lg w-full gap-4'>
+    <div className='bg-[#1C2642] flex flex-col lg:flex-row mt-5 font-manrope p-5 rounded-2xl  w-full gap-4'>
         <div className='flex-1 lg:w-3/4'>
             <p className='font-bold text-lg text-white'>Top/worst performers</p>
             <div className='flex gap-3 pt-3'>
@@ -21,7 +21,7 @@ const PerformanceChart = () => {
             <LineChart />
         </div>
         <div className='w-full lg:w-1/4 flex flex-col gap-5'>
-        <div  className='border p-5 rounded-lg border-[#4C546C]'>
+        <div  className='border p-5 rounded-2xl  border-[#4C546C]'>
                     <div className='flex items-center gap-1'>
                         <div className='bg-[#3DCC43] w-3 h-3 rounded-full' />
                         <p className='text-base font-bold text-[#CCCED5]'>Top Performers</p>
@@ -40,7 +40,7 @@ const PerformanceChart = () => {
                 </div>
 
 
-                <div  className='border p-5 rounded-lg border-[#4C546C]'>
+                <div  className='border p-5 rounded-2xl  border-[#4C546C]'>
                     <div className='flex items-center gap-1'>
                         <div className='bg-[#FF4045] w-3 h-3 rounded-full' />
                         <p className='text-base font-bold text-[#CCCED5]'>Worst Performers</p>
