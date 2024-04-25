@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+
+.textColor{background: linear-gradient(90.05deg, #3d7af2 6.09%, #ffffff 75.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;}

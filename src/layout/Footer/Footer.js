@@ -1,13 +1,7 @@
-import logo_dark from "../../assets/img/logo-dark.png";
+
 import React from "react";
 import "./Footer.css";
-import Sprite from "../../assets/img/sprite.svg";
-import stacknovaLogo from "../../assets/img/stacknova-full.png";
-import mediumIcon from "../../assets/img/medium-icon.webp";
-import githubIcon from "../../assets/img/github-icon.png";
-import gitbookIcon from "../../assets/img/gitbook-icon.svg";
-import telegramIcon from "../../assets/img/telegram-icon.png";
-import twitterIcon from "../../assets/img/twitter-icon.png";
+
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
@@ -26,7 +20,7 @@ const Footer = () => {
               >
                 telegram
                 <div className="footer-socials_socials_wrapper__k9UV2">
-                  <img src={telegramIcon} />
+                  {/* <img src={telegramIcon} /> */}
                   <span>telegram</span>
                 </div>
               </a>
@@ -37,7 +31,7 @@ const Footer = () => {
               >
                 twitter
                 <div className="footer-socials_socials_wrapper__k9UV2">
-                  <img src={twitterIcon} />
+                  {/* <img src={twitterIcon} /> */}
                   <span>twitter</span>
                 </div>
               </a>
@@ -48,7 +42,7 @@ const Footer = () => {
               >
                 medium
                 <div className="footer-socials_socials_wrapper__k9UV2">
-                  <img src={mediumIcon} alt />
+                  {/* <img src={mediumIcon} alt /> */}
                   <span>medium</span>
                 </div>
               </a>
@@ -59,7 +53,7 @@ const Footer = () => {
               >
                 github
                 <div className="footer-socials_socials_wrapper__k9UV2">
-                  <img src={githubIcon} alt />
+                  {/* <img src={githubIcon} alt /> */}
                   <span>github</span>
                 </div>
               </a>
@@ -70,7 +64,7 @@ const Footer = () => {
               >
                 whitepaper
                 <div className="footer-socials_socials_wrapper__k9UV2">
-                  <img src={gitbookIcon} alt />
+                  {/* <img src={gitbookIcon} alt /> */}
                   <span>whitepaper</span>
                 </div>
               </a>
@@ -78,7 +72,7 @@ const Footer = () => {
             <div className="footer-nav_root__tqeWW">
               <div className="footer-nav_content__wBpDg">
                 <Link to="/" className="footer-nav_title__Jf6Ag">
-                  <img src={stacknovaLogo} alt="logo" className="footer-logo" />
+                  {/* <img src={stacknovaLogo} alt="logo" className="footer-logo" /> */}
                 </Link>
                 <p className="footer-nav_text__XNB93">
                   The World's First AI-Powered Launchpad on Bitcoin.
