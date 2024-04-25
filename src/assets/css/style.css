@@ -25,3 +25,9 @@ ul {
 .home-bg {
   background: linear-gradient(180deg, #050510 0%, #0c142b 100%);
 }
+button {
+  cursor: pointer;
+}
+::-webkit-scrollbar {
+  display: none;
+}
