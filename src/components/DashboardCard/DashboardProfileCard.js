@@ -2,7 +2,7 @@ import React from 'react'
 
 const DashboardProfileCard = () => {
   return (
-    <div className='bg-[#1C2642] lg:justify-between flex lg:flex-row flex-col rounded-lg w-full p-5 '>
+    <div className='bg-[#1C2642] lg:justify-between flex lg:flex-row flex-col rounded-2xl w-full p-5 '>
             <div className='flex md:flex-row flex-col items-center  space-x-6'>
         <img src='/images/profile.png'  alt='' className='' />
         <div className='font-manrope'>

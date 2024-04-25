@@ -30,7 +30,7 @@ export const PortfolioChart = () => {
         width = 400;
     
       }else{
-        width = 300;
+        width = 260;
       }
 
       setChartDimensions({ width, height });
