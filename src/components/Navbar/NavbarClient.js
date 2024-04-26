@@ -130,7 +130,7 @@ export default function NavbarClient() {
                   ))}
                 </div>
                 <div className="border-t border-gray-700 pb-3 pt-4">
-                  <div className="flex items-center px-5">
+                  <div className="flex items-center px-24px">
                     <div className="flex-shrink-0">
                       <button className="bg-gradient-to-r from-blue-600 to-blue-400 hover:from-blue-700 hover:to-blue-500 font-manrope text-white text-sm h-[32px] w-[86px] px-1 rounded-full shadow-md transition-all duration-300 ease-in-out">
                         Exchange

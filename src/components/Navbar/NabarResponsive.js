@@ -26,7 +26,7 @@ export default function NabarResponsive() {
       <div className="min-h-full">
         <Disclosure
           as="nav"
-          className="bg-[#171f38] border-b-[1px] border-b-[#333C57]"
+          className="bg-[#171f38] nav-bar-m border-b-[1px] border-b-[#333C57]"
         >
           {({ open }) => (
             <>
@@ -116,7 +116,7 @@ export default function NabarResponsive() {
                 </div>
               </div>
 
-              <Disclosure.Panel className="md:hidden absolute w-full bg-[#171f38] border-b-[1px] border-b-[#333C57] z-10">
+              <Disclosure.Panel className="md:hidden absolute w-full bg-[#171f38]  mobile-nav border-b-[1px] border-b-[#333C57] z-10">
                 <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
                   {sidebarConst.map((item, index) => (
                     <Disclosure.Button
@@ -167,7 +167,7 @@ export default function NabarResponsive() {
                   ))}
                 </div>
                 <div className="border-t border-gray-700 pb-3 pt-4">
-                  <div className="flex items-center px-5">
+                  <div className="flex items-center px-24px">
                     <div className="flex-shrink-0">
                       <img src="/images/Avatar.png" alt="" className="" />
                     </div>
@@ -189,7 +189,7 @@ export default function NabarResponsive() {
                       <Language />
                     </div>
                   </div>
-                  <div className="mt-3 space-y-1 px-2">
+                  {/* <div className="mt-3 space-y-1 px-2">
                     {userNavigation.map((item) => (
                       <Disclosure.Button
                         key={item.name}
@@ -200,7 +200,7 @@ export default function NabarResponsive() {
                         {item.name}
                       </Disclosure.Button>
                     ))}
-                  </div>
+                  </div> */}
                 </div>
               </Disclosure.Panel>
             </>

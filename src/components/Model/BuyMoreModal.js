@@ -62,7 +62,7 @@ export default function BuyMoreModal() {
                     width={34}
                     height={34}
                     onClick={() => setIsModal(false)}
-                    className=" top-5 right-5 cursor-pointer"
+                    className=" top-24px right-5 cursor-pointer"
                   /> */}
                   <CrossIcon onClick={() => setIsModal(false)} />
                 </div>

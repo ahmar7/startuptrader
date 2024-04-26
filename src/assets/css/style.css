@@ -31,3 +31,104 @@ button {
 ::-webkit-scrollbar {
   display: none;
 }
+.gap-24px {
+  gap: 24px;
+}
+.p-24px {
+  padding: 24px;
+}
+.px-24px {
+  padding-inline: 24px;
+}
+.pt-24px {
+  padding-top: 24px;
+}
+/*  */
+.navbar {
+  padding-block: 26px;
+  border-bottom: 1px solid;
+  border-image-source: linear-gradient(
+    90deg,
+    rgba(10, 7, 37, 0.6) 0.66%,
+    rgba(1, 88, 232, 0.138) 50.83%,
+    rgba(8, 10, 24, 0.6) 100%
+  );
+  border-image-slice: 1;
+}
+.flex-sp {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+
+  list-style: none;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+.nav-links li a.active {
+  font-weight: 600;
+}
+
+.login-btn {
+  color: white;
+  border: 1px solid #4c546c;
+  padding: 10px 16px 10px 16px;
+  border-radius: 64px;
+  background-color: transparent;
+}
+.exchange-btn {
+  border: none;
+  color: white;
+  background: linear-gradient(115.1deg, #3150dc 11.08%, #3091fc 74.92%);
+
+  padding: 10px 16px 10px 16px;
+  border-radius: 400px;
+  background-color: transparent;
+}
+.account-btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.rounded-lg {
+  border-radius: 16px !important;
+}
+.main-dashboard .rounded-lg {
+  border-radius: 16px;
+}
+
+/*  */
+@media (max-width: 768px) {
+  .nav-bar-m {
+    position: fixed;
+    width: 100%;
+  }
+  .dashboard-layout {
+    padding-top: 100px;
+  }
+  .mobile-nav {
+    position: fixed;
+    background: #171f38;
+    width: 100%;
+  }
+}
+.pb-custom {
+  padding-bottom: 19px;
+}
+
+@media (max-width: 600px) {
+  .two-ob,
+  .main-dashboard {
+    padding-inline: 20px;
+  }
+}
