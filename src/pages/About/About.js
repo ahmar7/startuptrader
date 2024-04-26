@@ -12,12 +12,12 @@ const About = () => {
         para={"Learn, share and communicate with other founders"}
       />
 
-      <div className="flex gap-8 items-center  section-width md:flex-row flex-col mt-16 px-8 lg:px-40 ">
+      <div className="flex gap-8 items-center  section-width md:flex-row flex-col mt-16 px-8 lg:px-40 lg:pt-[100px]">
         <div>
           {" "}
           <img src="/images/photo.png" alt="" className="w-full" />
         </div>
-        <div className="md:w-[60%]">
+        <div className="md:w-[80%]">
           <h1 className="textColor custom-text   font-sora leading-tight">
             Learn more about why I built StartupTrader
           </h1>

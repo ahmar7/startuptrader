@@ -14,7 +14,7 @@ const ExchangeInfo = () => {
         para={"Built with strong economic principles"}
       />
 
-      <div className="flex gap-8 w-full md:flex-row flex-col mb-12  lg:px-40 py-16 section-width">
+      <div className="flex gap-8 w-full md:flex-row flex-col mb-12  lg:pt-[100px] sm:pt-[50px]   section-width">
         {cardData.map((v, i) => (
           <div className=" h-auto flex flex-col w-full relative  items-center p-10 gap-4  border-gradient rounded-xl overflow-hidden">
             <img

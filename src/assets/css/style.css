@@ -22,6 +22,9 @@ ul {
   margin: auto;
   padding-inline: 20px;
 }
+.new-linear {
+  background: linear-gradient(180deg, #050510 0%, #0c142b 100%);
+}
 .home-bg {
   background: linear-gradient(180deg, #050510 0%, #0c142b 100%);
 }
@@ -141,6 +144,13 @@ button {
 .custom-ft {
   margin-top: 24px;
 }
+.privacy-pg .main-nav,
+.privacy-pg .section-width.bg-\[\#050511\] {
+  background: #171f38;
+}
+.min-e {
+  min-height: 100vh;
+}
 @media (min-width: 768px) {
   .textColor {
     line-height: 68px;
@@ -149,6 +159,9 @@ button {
 
 /*  */
 @media (max-width: 768px) {
+  .h-\[600aapx\] {
+    height: 600px;
+  }
   .main-footer {
     margin-top: 50px;
   }

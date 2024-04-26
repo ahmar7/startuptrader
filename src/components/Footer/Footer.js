@@ -7,7 +7,7 @@ import BrowserStartUpIcon from "../Icons/BrowserStartUpIcon";
 const Footer = () => {
   return (
     <div className="flex justify-center flex-col element items-center px-8    main-footer pt-8">
-      <div className="grid grid-cols-1 section-width md:grid-cols-2 lg:grid-cols-4 gap-8  px-0sm py-4 bg-[#050511]">
+      <div className="grid grid-cols-1 section-width md:grid-cols-2 lg:grid-cols-4 gap-8  px-0sm py-4  ">
         <div className="">
           <img
             src="/images/dark.png"

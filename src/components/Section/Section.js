@@ -2,7 +2,7 @@ import React from "react";
 
 const Section = ({ title, shadow, img }) => {
   return (
-    <div className="flex pt-[200px] sm:pt-[100px] justify-center flex-col text-center relative items-center px-8  ">
+    <div className="flex lg:pt-[100px] pb-16 justify-center flex-col text-center relative items-center px-8  ">
       {shadow && (
         <img
           src="/images/leftshadow.svg"

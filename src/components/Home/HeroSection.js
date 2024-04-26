@@ -3,7 +3,7 @@ import React from "react";
 const HeroSection = () => {
   return (
     <>
-      <div className="bg-[#050511] relative flex h-[600px] pt-[200px] sm:pt-[100px]  justify-center items-center py-14 ">
+      <div className="xbg-[#050511] relative flex h-[600aapx] lg:pt-[200px] sm:pt-[100px]  justify-center items-center py-14 ">
         <img
           src="/images/hero.png"
           alt="Hero Image"
@@ -33,7 +33,7 @@ const HeroSection = () => {
           className="hidden md:block absolute right-0 top-206"
         />
       </div>
-      <div className=" flex justify-center items-center py-16 ">
+      <div className=" flex justify-center items-center lg:pt-[100px] pb-16 ">
         <img
           src="/images/Exchange.svg"
           alt="Hero Image"

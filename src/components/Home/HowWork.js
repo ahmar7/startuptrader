@@ -7,10 +7,10 @@ const HowWork = () => {
       <p className="text-xl lg:text-[42px]  md:text-[32px]   smtext-28px   text-[#FFFFFF] font-sora">
         How it works?
       </p>
-      <p className="text-[14px] lg:text-[18px] pt-5 text-[#F3F3FF] font-sora">
+      <p className="text-[14px] lg:text-[18px] pt-5 text-[#F3F3FF] font-sora text-center">
         Simple Steps to Start Your Investment Journey
       </p>
-      <div className="flex gap-8 w-full md:flex-row flex-col my-12 px-8  ">
+      <div className="flex gap-8 w-full md:flex-row flex-col my-12  ">
         {cardData.map((v, i) => (
           <div className=" h-auto flex flex-col w-full relative  items-center p-10 gap-4  border-gradient rounded-xl overflow-hidden">
             <img

@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutHeroSection = ({ title, title1, para }) => {
   return (
-    <div className="bg-[#050511] relative flex h-[600px] pt-[200px] sm:pt-[100px]  justify-center items-center py-14 ">
+    <div className="xbg-[#050511] relative flex h-[600aapx] lg:pt-[200px] sm:pt-[100px]  justify-center items-center py-14 ">
       <div className="text-center lg:w-full px-8 md:px-0 xl:w-[50%]  relative space-y-4">
         <img
           src="/images/shadowcc.png"
