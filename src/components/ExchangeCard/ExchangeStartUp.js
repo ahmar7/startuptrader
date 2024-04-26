@@ -56,10 +56,10 @@ const ExchangeStartUp = () => {
             Claim Company
           </p>
         </div>
-        <div className="flex md:flex-row flex-col pt-24px gap-6">
+        <div className="flex md:flex-row w-full  flex-col pt-24px gap-6">
           {[...Array(3)].map((_, i) => (
             <div className="flex gap-6">
-              <div className="flex flex-col border-b pb-5 md:pb-0 md:border-none gap-4">
+              <div className="flex flex-col w-full items-center border-b pb-5 md:pb-0 md:border-none gap-4">
                 <p className="text-[#CCCED5] text-[14px] font-manrope">
                   Market Capitalization
                 </p>

@@ -8,6 +8,7 @@ import ShairIcon from "../Icons/ShairIcon";
 import ReplyIcon from "../Icons/ReplyIcon";
 import SendIcon from "../Icons/SendIcon";
 import UserIcon from "../Icons/UserIcon";
+import { PortfolioLineChart } from "../Chart/PortfolioLineChart";
 
 const ExchangeChart = () => {
   const [searchDay, setSearchDay] = useState("24H");
@@ -18,11 +19,11 @@ const ExchangeChart = () => {
           <div className="flex md:flex-row md:gap-0 gap-4 flex-col md:items-center md:justify-between">
             <p className="font-bold text-[32px]  text-[#FFFFFF]">$12.5</p>
 
-            <div className="flex h-5 justify-center items-center mb-5 md:mb-0 md:gap-2">
+            <div className="flex items-center md:mb-0 mb-5 md:gap-2">
               {["24H", "5D", "1M", "YTP", "1Y", "2Y", "5Y", "ALL"].map((v) => (
                 <p
                   onClick={() => setSearchDay(v)}
-                  className={` text-sm  px-2 py-1 cursor-pointer ${
+                  className={` text-sm  px-[6px] md:px-2 py-1 cursor-pointer ${
                     searchDay == v
                       ? "text-[#439CFF] border border-[#439CFF] rounded-full  text-center  "
                       : "text-[#CCCED5]"
@@ -37,7 +38,7 @@ const ExchangeChart = () => {
             <UpValueIcon />
             <p className="text-[#3DCC43] pl-1 text-sm font-normal">2.56%</p>
           </div>
-          <PortfolioChart />
+          <PortfolioLineChart />
         </div>
         <div className="bg-[#1C2642]    rounded-2xl  p-24px mt-5 ">
           <p className="text-[18] font-manrope font-bold text-[#FFFFFF]">

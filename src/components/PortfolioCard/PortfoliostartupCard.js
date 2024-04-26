@@ -46,17 +46,17 @@ const PortfoliostartupCard = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col md:justify-between items-center md:items-end">
-        <div className="flex items-center gap-2 rounded-full mb-5 md:mb-0 border border-[#4C546C] px-3 py-1 w-[150px] h-12 justify-center">
+      <div className="flex flex-col md:justify-between text-center md:items-end">
+        <div className="flex items-center gap-2 rounded-full mb-5 md:mb-0 border border-[#4C546C] px-3 my-4 md:my-0 py-1 md:w-[150px] h-12 justify-center">
           <StarIcon />
           <p className="text-[#E5E7EA] text-[12px] font-manrope font-semibold">
             Add to Watchlist
           </p>
         </div>
-        <div className="flex md:flex-row flex-col gap-6">
+        <div className="flex md:flex-row text-center w-full justify-center flex-col gap-6">
           {[...Array(3)].map((_, i) => (
             <div className="flex gap-6">
-              <div className="flex flex-col border-b  pb-3 md:pb-0 md:border-none gap-4">
+              <div className="flex flex-col border-b w-full pb-3 md:pb-0 md:border-none gap-4">
                 <p className="text-[#CCCED5] text-[14px] font-manrope">
                   Market Capitalization
                 </p>

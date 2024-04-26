@@ -37,8 +37,8 @@ const TopStartUp = () => {
                     Industry <UnfoldMoreIcon />
                   </div>
                 </th>
-                <th className="text-[#CCCED5]  text-sm">
-                  <div className='flex items-center gap-2'>
+                <th className="text-[#CCCED5]   text-sm">
+                  <div className='flex items-center w-32 gap-2'>
                     Total Value <UnfoldMoreIcon />
                   </div>
                 </th>
@@ -60,12 +60,12 @@ const TopStartUp = () => {
                 <tr key={i} className='border-b border-[#333C57]'>
                   <td className='text-white text-sm'>{i + 1}</td>
                   <td>
-                    <div className='flex items-center w-40 py-5 gap-2'>
+                    <div className='flex items-center w-40 py-8 gap-2'>
                       <img src={`/images/c${i}.png`} alt='' className='w-6 h-6 rounded-full' />
                       <p className='text-white text-sm'>Company name</p>
                     </div>
                   </td>
-                  <td className='text-white text-sm'>Industry type</td>
+                  <td className='text-white  text-sm'>Industry type</td>
                   <td className='text-white text-sm w-40'>$23,447.64</td>
                   <td className='text-white text-sm'>$23,447.64</td>
                   <td><AreaChart height={28} width={100} color1={'#0F9663'} color2={'#0F9663'} /></td>

@@ -14,7 +14,7 @@ const Dashboard = () => {
         <DashboardProfileCard />
         <PortfolioValuesCard />
 
-        <div className="w-full flex lg:flex-row flex-col gap-24px">
+        <div className="w-full flex lg:flex-row flex-col gap-6">
           <div className="lg:w-[70%] ">
             <AssetsCard />
           </div>

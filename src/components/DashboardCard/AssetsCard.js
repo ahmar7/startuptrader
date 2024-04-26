@@ -12,7 +12,7 @@ const AssetsCard = () => {
     <div className="bg-[#1C2642] font-manrope flex flex-col mt-5 rounded-2xl  w-full p-24px">
       <div className="flex md:flex-row flex-col gap-4 md:gap-0 md:justify-between">
         <p className="font-bold text-lg text-white">Assets</p>
-        <div className="flex gap-2">
+        <div className="flex md:gap-2 ">
           {["24H", "5D", "1M", "YTP", "1Y", "2Y", "5Y", "ALL"].map((v) => (
             <p
               key={v}

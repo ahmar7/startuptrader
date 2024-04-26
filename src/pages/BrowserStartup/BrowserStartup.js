@@ -25,7 +25,8 @@ const BrowserStartup = () => {
             <DownColorIcon />
           </div>
         </div>
-        <div className='mt-5'>
+        <div className='mt-5 overflow-x-auto'>
+        <div className=' min-w-max'>
           <div className='border-b border-[#4C546C] pb-2'>
             <div className='flex justify-between'>
               {["Name", "Total Value", "Watch"].map((v, index) => (
@@ -33,10 +34,11 @@ const BrowserStartup = () => {
               ))}
             </div>
           </div>
-          <div className=''>
+          <div className='  '>
+          
             {[...Array(6)].map((_, i) => (
               <div key={i} className='flex flex-row items-center justify-between py-3 border-b border-[#333C57]'>
-                <div className='flex gap-2 items-center'>
+                <div className='flex gap-2 py-3 w-[200px] items-center'>
                   <img src={`/images/c${i}.png`} alt='' className='w-8 h-8 rounded-full' />
                   <div>
                     <p className='text-white text-sm font-bold'>Company name</p>
@@ -55,7 +57,7 @@ const BrowserStartup = () => {
                   <p className='text-[#E5E7EA] text-xs font-semibold'>Add to Watchlist</p>
                 </div>
               </div>
-            ))}
+            ))}</div>
           </div>
         </div>
       </div>
