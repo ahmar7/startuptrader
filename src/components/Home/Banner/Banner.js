@@ -1,9 +1,9 @@
 import React from "react";
-import "./Banner.css";
+import "./banner.css";
 const Banner = () => {
   return (
     <div className=" ">
-      <div className="section-width">asas</div>
+      <div className="section-width">asasDSsdsadsaD</div>
     </div>
   );
 };

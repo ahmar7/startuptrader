@@ -21,3 +21,73 @@ code {
   font-weight: normal;
   src: local('manrope'), url('/src/assets/font/Manrope-VariableFont_wght.ttf') format('woff');
 }
+
+@font-face {
+  font-family: 'sora';
+  font-style: normal;
+  font-weight: normal;
+  src: local('sora'), url('/src/assets/font/Sora-VariableFont_wght.ttf') format('woff');
+}
+
+
+.border-gradient {
+  border: 1px solid transparent; /* Define the border with a default solid style, and make it transparent */
+  border-image-source: linear-gradient(116.47deg, #002EFF -2.94%, rgba(137, 163, 255, 0) 48.81%, #0038FF 109.97%);
+  border-image-slice: 1 ; 
+
+  border-radius: 20px; /* Ensure the border-radius is applied */
+}
+
+.border-gradient-1 {
+  /* Apply individual borders */
+  border-top: none; /* No border on the top */
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-left: 1px solid transparent;
+
+  /* Gradient for borders except the top */
+  border-image-source: linear-gradient(116.47deg, #002EFF -2.94%, rgba(137, 163, 255, 0) 48.81%, #0038FF 109.97%);
+  border-image-slice: 1;
+  border-image-width: 1px 1px 0px 1px; /* No border-image on the top, apply on other sides */
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+
+  /* Rounded corners */
+  border-radius: 20px; /* Ensure the border-radius is applied */
+}
+.border-gradient-2 {
+  /* Apply individual borders */
+  border-top: 1px solid transparent; /* No border on the top */
+  border-right: 1px solid transparent;
+  border-bottom: none;
+  border-left: 1px solid transparent;
+
+  /* Gradient for borders except the top */
+  border-image-source: linear-gradient(116.47deg, #002EFF -2.94%, rgba(137, 163, 255, 0) 48.81%, #0038FF 109.97%);
+  border-image-slice: 1;
+  border-image-width: 0 1px 1px 1px; /* No border-image on the top, apply on other sides */
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+
+  /* Rounded corners */
+  border-radius: 20px; /* Ensure the border-radius is applied */
+}
+
+
+.element {
+  /* Setting up the border but with transparent borders on three sides */
+  border: 1px solid transparent;
+  border-top: 1px solid; /* This ensures the top border is visible and set for the gradient */
+
+  /* Applying the gradient to the border image */
+  border-image-source: linear-gradient(89.94deg, rgba(0, 46, 255, 0) -1.77%, rgba(0, 46, 255, 0.84) 21%, rgba(0, 46, 255, 0) 102.3%);
+  border-image-slice: 1;  /* This tells the browser how to slice the border image */
+  border-image-width: 1;  /* This specifies the width of the border image */
+  border-image-outset: 0; /* Specifies how far the border image area extends beyond the border box */
+  border-image-repeat: stretch; /* How the border image should be repeated/stretched */
+  
+  /* Targeting only the top border with the gradient */
+  border-image-slice: 1;
+  border-image-width: 1 0 0 0; /* Applying the border image only to the top */
+}
+ 
