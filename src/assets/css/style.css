@@ -106,9 +106,69 @@ button {
 .main-dashboard .rounded-lg {
   border-radius: 16px;
 }
+.top-206 {
+  top: 206px;
+}
+.textColor {
+  background: linear-gradient(90.05deg, #3d7af2 6.09%, #ffffff 75.25%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-0 {
+  margin-top: 0 !important;
+}
+.btn-ext {
+  box-shadow: 0px 6px 26px 0px #0c46974a;
+
+  margin-top: 48px !important;
+}
+.section-width {
+  max-width: 1500px;
+  margin: auto;
+  padding-inline: 25px;
+}
+.custom-text {
+  font-size: 56px;
+}
+.main-footer {
+  margin-top: 100px;
+}
+.custom-ft {
+  margin-top: 24px;
+}
+@media (min-width: 768px) {
+  .textColor {
+    line-height: 68px;
+  }
+}
 
 /*  */
 @media (max-width: 768px) {
+  .main-footer {
+    margin-top: 50px;
+  }
+  .custom-text {
+    font-size: 30px;
+  }
+  .smtext-28px {
+    font-size: 32px;
+  }
+  .sm\:\pt-\[100px\] {
+    padding-top: 100px;
+  }
+  .px-0sm {
+    padding-inline: 0 !important;
+  }
+  .fixsm {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
   .nav-bar-m {
     position: fixed;
     width: 100%;

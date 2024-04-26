@@ -3,9 +3,9 @@ import DisclosureComp from "../Disclosure/Disclosure";
 import { DisclosureData } from "../Constant/index";
 const Question = () => {
   return (
-    <div className="flex gap-6 md:justify-between w-full md:flex-row flex-col py-12 px-8 lg:px-40 ">
-      <div className="flex flex-col gap-2 ">
-        <p className="text-[#FFFFFF] text-[42px] font-sora">
+    <div className="flex section-width gap-6 md:justify-between w-full md:flex-row flex-col py-12  lg:pt-[150px] md:pt-[100px]  sm:pt-[50px] px-8 lg:px-40 ">
+      <div className="flex flex-col gap-2 fixsm">
+        <p className="text-[#FFFFFF] text-[42px] font-sora smtext-28px">
           Have Any Questions?
         </p>
         <p className="text-[18px] text-[#F3F3FF] font-sora">
