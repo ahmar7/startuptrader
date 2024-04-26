@@ -1,1 +1,19 @@
- 
+@media (max-width: 1400px) {
+  .signup-main {
+    /* min-height: 900px;
+     */
+    box-sizing: border-box;
+  }
+  .social-login button {
+    padding: 15px 20px 15px 20px;
+  }
+  .inputfields input {
+    padding: 10px 20px 10px 20px;
+  }
+  .sign-btn {
+    height: 50px;
+  }
+  .eye {
+    top: 17px;
+  }
+}

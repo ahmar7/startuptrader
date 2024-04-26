@@ -2,11 +2,14 @@ import React from "react";
 import Language from "../Icons/Language";
 import NotificationIcon from "../Icons/NotificationIcon";
 import BuyMoreModal from "../Model/BuyMoreModal";
-
+import { Link } from "react-router-dom";
+import "./NavBar.css";
 const Navbar = () => {
   return (
     <div className="bg-[#171f38] h-20 flex border-b-[1px] border-b-[#333C57] justify-between items-center px-8 py-5">
-      <img src="/images/dark.png" alt="" className="" />
+      <Link to="/">
+        <img src="/images/dark.png" alt="" className="" />
+      </Link>
       <div className="flex gap-2 md:gap-8 items-center ">
         <div className="flex ">
           {" "}

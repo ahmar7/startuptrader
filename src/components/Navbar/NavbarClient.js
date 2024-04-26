@@ -1,85 +1,82 @@
-import { Fragment ,useState} from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import NotificationIcon from '../Icons/NotificationIcon'
-import Language from '../Icons/Language'
-import BuyMoreModal from '../Model/BuyMoreModal'
-import { clientNavbar } from '../Constant/index';
-import { useNavigate,useLocation } from 'react-router-dom';
-
+import { Fragment, useState } from "react";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import NotificationIcon from "../Icons/NotificationIcon";
+import Language from "../Icons/Language";
+import BuyMoreModal from "../Model/BuyMoreModal";
+import { clientNavbar } from "../Constant/index";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 
 const userNavigation = [
-  { name: 'Your Profile', href: '#' },
-  { name: 'Settings', href: '#' },
-  { name: 'Sign out', href: '#' },
-]
+  { name: "Your Profile", href: "#" },
+  { name: "Settings", href: "#" },
+  { name: "Sign out", href: "#" },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function NavbarClient() {
-    const [isHovered, setIsHovered] = useState(-1);
-    const navigate = useNavigate();
-    const location = useLocation();
+  const [isHovered, setIsHovered] = useState(-1);
+  const navigate = useNavigate();
+  const location = useLocation();
   return (
     <>
-     
       <div className="min-h-full">
-        <Disclosure as="nav" className="bg-[#050511] border-b-[1px] border-b-[#333C57]">
+        <Disclosure as="nav" className="main-nav bg-[#050511] border-b-[1px]  ">
           {({ open }) => (
             <>
               <div className="  px-4 sm:px-6 lg:px-8">
                 <div className="flex h-[72px]  items-center w-full justify-between">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
-                    <img src='/images/dark.png'  alt='' className='' />
+                      <Link to="/">
+                        <img src="/images/dark.png" alt="" className="" />
+                      </Link>
                     </div>
-                   
                   </div>
                   <div className="hidden lg:block">
-                  <div className='flex xl:gap-4'>
-                  {clientNavbar.map((item,index) => (
-                    <Disclosure.Button
-                      key={item.name}
-                      as="a"
-                
-                    >
-                      <div key={index}
-                    onClick={() => navigate(item.path)}
-                   
-                    className={`flex items-center   space-x-4 px-3 py-3 rounded-md cursor-pointer 
+                    <div className="flex xl:gap-4">
+                      {clientNavbar.map((item, index) => (
+                        <Disclosure.Button key={item.name} as="a">
+                          <div
+                            key={index}
+                            onClick={() => navigate(item.path)}
+                            className={`flex items-center   space-x-4 px-3 py-3 rounded-md cursor-pointer 
                                 hover:bg-[#1C2642] transition-colors duration-200
-                                `}>
-
-                    <p className={`text-[14px] font-manrope transition-colors duration-200 ${( (location.pathname === item.path )) ? "text-[#439CFF]" : "text-[#CCCED5]"} 
-                                  `}>
-                        {item.name}
-                    </p>
-                </div>
-                    </Disclosure.Button>
-                  ))}</div>
+                                `}
+                          >
+                            <p
+                              className={`text-[14px] font-manrope transition-colors duration-200 ${
+                                location.pathname === item.path
+                                  ? "text-[#439CFF]"
+                                  : "text-[#CCCED5]"
+                              } 
+                                  `}
+                            >
+                              {item.name}
+                            </p>
+                          </div>
+                        </Disclosure.Button>
+                      ))}
+                    </div>
                   </div>
                   <div className="hidden lg:block">
                     <div className=" flex gap-6 items-center ">
-                   
-           
-                    <button
-       
-        className=" font-manrope text-white text-[12px] h-[32px] w-[86px] border px-1 rounded-full shadow-md transition-all duration-300 ease-in-out"
-      >
-        Log in
-      </button>
-                    <button
-        
-        className="bg-gradient-to-r from-blue-600 to-blue-400 hover:from-blue-700 hover:to-blue-500 font-manrope text-white text-sm h-[32px] w-[86px] px-1 rounded-full shadow-md transition-all duration-300 ease-in-out"
-      >
-        Exchange
-      </button>
-                      
-                     
+                      <Link to="/login">
+                        {" "}
+                        <button className=" font-manrope text-white text-[12px] h-[32px] w-[86px] border px-1 rounded-full shadow-md transition-all duration-300 ease-in-out">
+                          Log in
+                        </button>
+                      </Link>
+                      <Link to="/dashboard">
+                        <button className="bg-gradient-to-r from-blue-600 to-blue-400 hover:from-blue-700 hover:to-blue-500 font-manrope text-white text-sm h-[32px] w-[86px] px-1 rounded-full shadow-md transition-all duration-300 ease-in-out">
+                          Exchange
+                        </button>
+                      </Link>
+
                       {/* Profile dropdown */}
-                    
                     </div>
                   </div>
                   <div className="-mr-2 flex lg:hidden">
@@ -88,9 +85,15 @@ export default function NavbarClient() {
                       <span className="absolute -inset-0.5" />
                       <span className="sr-only">Open main menu</span>
                       {open ? (
-                        <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                        <XMarkIcon
+                          className="block h-6 w-6"
+                          aria-hidden="true"
+                        />
                       ) : (
-                        <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                        <Bars3Icon
+                          className="block h-6 w-6"
+                          aria-hidden="true"
+                        />
                       )}
                     </Disclosure.Button>
                   </div>
@@ -99,40 +102,40 @@ export default function NavbarClient() {
 
               <Disclosure.Panel className="lg:hidden absolute w-full bg-[#171f38] border-b-[1px] border-b-[#333C57] z-10">
                 <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
-                  {clientNavbar.map((item,index) => (
-                    <Disclosure.Button
-                      key={item.name}
-                      as="a"
-                      href={item.path}
-          
-                    >
-                      <div key={index}
-                    onClick={() => navigate(item.path)}
-                
-                    className={`flex items-center   space-x-4 px-3 py-3 rounded-md cursor-pointer 
+                  {clientNavbar.map((item, index) => (
+                    <Disclosure.Button key={item.name} as="a" href={item.path}>
+                      <div
+                        key={index}
+                        onClick={() => navigate(item.path)}
+                        className={`flex items-center   space-x-4 px-3 py-3 rounded-md cursor-pointer 
                                 hover:bg-[#1C2642] transition-colors duration-200
-                                ${((location.pathname === item.path ))? 'bg-[#1C2642]' : 'bg-transparent'}`}>
-
-                    <p className={`text-xl font-manrope transition-colors duration-200 ${((location.pathname === item.path )) ? "text-[#439CFF]" : "text-[#CCCED5]"} 
-                                  `}>
-                        {item.name}
-                    </p>
-                </div>
+                                ${
+                                  location.pathname === item.path
+                                    ? "bg-[#1C2642]"
+                                    : "bg-transparent"
+                                }`}
+                      >
+                        <p
+                          className={`text-xl font-manrope transition-colors duration-200 ${
+                            location.pathname === item.path
+                              ? "text-[#439CFF]"
+                              : "text-[#CCCED5]"
+                          } 
+                                  `}
+                        >
+                          {item.name}
+                        </p>
+                      </div>
                     </Disclosure.Button>
                   ))}
                 </div>
                 <div className="border-t border-gray-700 pb-3 pt-4">
                   <div className="flex items-center px-5">
                     <div className="flex-shrink-0">
-                    <button
-        
-        className="bg-gradient-to-r from-blue-600 to-blue-400 hover:from-blue-700 hover:to-blue-500 font-manrope text-white text-sm h-[32px] w-[86px] px-1 rounded-full shadow-md transition-all duration-300 ease-in-out"
-      >
-        Exchange
-      </button>
+                      <button className="bg-gradient-to-r from-blue-600 to-blue-400 hover:from-blue-700 hover:to-blue-500 font-manrope text-white text-sm h-[32px] w-[86px] px-1 rounded-full shadow-md transition-all duration-300 ease-in-out">
+                        Exchange
+                      </button>
                     </div>
-                  
-                   
                   </div>
                   <div className="mt-3 space-y-1 px-2">
                     {userNavigation.map((item) => (
@@ -151,9 +154,7 @@ export default function NavbarClient() {
             </>
           )}
         </Disclosure>
-
-       
       </div>
     </>
-  )
+  );
 }

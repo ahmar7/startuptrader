@@ -62,7 +62,7 @@ a {
   right: 22px;
   cursor: pointer;
   position: absolute;
-  top: 19px;
+  top: 22px;
 }
 .password-field {
   position: relative;
@@ -81,7 +81,7 @@ a {
 }
 .flex-t {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   list-style: none;
 }
 .flex-t li img {
@@ -91,6 +91,9 @@ a {
   list-style: none;
   width: 200px;
   font-size: 13px;
+  display: flex;
+  align-items: center;
+
   background-position: left center;
   color: #666d81;
 }

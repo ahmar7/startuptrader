@@ -5,6 +5,7 @@ import Vector from "../../assets/img/Vector.png";
 import right from "../../assets/img/right.png";
 import left from "../../assets/img/left.png";
 import React from "react";
+import "./login.css";
 import { Link } from "react-router-dom";
 const Login = () => {
   return (
