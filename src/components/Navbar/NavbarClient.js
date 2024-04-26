@@ -24,10 +24,10 @@ export default function NavbarClient() {
   return (
     <>
       <div className="min-h-full">
-        <Disclosure as="nav" className="main-nav bg-[#050511] border-b-[1px]  ">
+        <Disclosure as="nav" className="main-nav bg-[#050511]  ">
           {({ open }) => (
             <>
-              <div className="  px-4 sm:px-6 lg:px-8">
+              <div className="  px-4 sm:px-6 lg:px-8 section-width">
                 <div className="flex h-[72px]  items-center w-full justify-between">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">

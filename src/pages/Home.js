@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <NavbarClient />
-      <div className="bg-[#050511]">
+      <div className="new-linear">
         <HeroSection />
         <HowWork />
         <TopTrading />
